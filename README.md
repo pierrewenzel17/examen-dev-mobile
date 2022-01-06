@@ -7,10 +7,10 @@
 * Naviguer vers la page de détails (depuis la recherche) : Oui
 * Afficher les informations de base : Oui
 * Afficher la liste des acteurs : Oui
-* Mettre / enlever des films vus :
-* Avoir 2 tabs (recherche et vus) :
-* Affichage des films vus :
-* Naviguer vers la page de détails (depuis les films vus) :
+* Mettre / enlever des films vus : Commencé mais pas fini
+* Avoir 2 tabs (recherche et vus) : Pas eu le temps
+* Affichage des films vus : Pas eu le temps
+* Naviguer vers la page de détails (depuis les films vus) : Pas eu le temps
 
 
 
@@ -23,3 +23,4 @@ J'ai réalisé l'examen sur téléphone
 Ajouter vos remarques ici si besoin
 
 J'ai utilisé les helpers
+

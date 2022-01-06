@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, TextInput, Button, StyleSheet, FlatList, Keyboard } from 'react-native';
 import Colors from '../enums/Colors';
 import Movie from '../models/Movie';
@@ -40,6 +40,12 @@ const Search = ({ navigation }: SearchParams) => {
     navigation.navigate("ViewMovie", { id });
   };
 
+  useEffect(() => {
+    (async () => {
+        setMovies(await getMovies(''));
+    })();
+  }, []);
+
   return (
     <View style={styles.container}>
       <View style={styles.searchContainer}>
@@ -47,7 +53,7 @@ const Search = ({ navigation }: SearchParams) => {
           placeholder='Nom du film'
           value={reseach}
           onSubmitEditing={searchMovie}
-          onChangeText={(text) => setResearch(text)}
+          onChangeText={(text) => setResearch(text.trim())}
         />
         <Button
           title='Annuler'
